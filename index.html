@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Инвестиции России - инвесторам</title>
+	<link rel="stylesheet" href="./app.css">
+	<link rel="stylesheet" href="./css/controls.css">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/footer.css">
+	<link rel="stylesheet" href="./css/invest.css">
+	<link rel="stylesheet" href="./css/stat.css">
+</head>
+
+<body>
+
+<header class="header">
+	<div class="app__wrapper header__content header__content_static">
+		<a class="header__hamburger-link" href="#">
+			<img class="header__hamburger" src="./images/hamburger-menu.svg" width="36" height="36" alt="hamburger-menu">
+		</a>
+		<a class="header__logo-link" href="./index.html">
+			<img class="header__logo" src="./images/logo-horizont.svg" alt="logo">
+		</a>
+		<a class="header__logo-small-link" href="#">
+			<img class="header__logo-small" src="./images/logo-horizont-sign.svg" width="63" height="41" alt="logo">
+		</a>
+		<nav class="header__menu">
+			<ul class="header__menu-list">
+				<li class="header__menu-item">
+					<p class="header__menu-link header__menu-link_active">Инвесторам</p>
+				</li>
+				<li class="header__menu-item">
+					<a class="header__menu-link" href="./borrowers.html">Заёмщикам</a>
+				</li>
+				<li class="header__menu-item">
+					<a class="header__menu-link" href="./partners.html">Партнёрам</a>
+				</li>
+			</ul>
+		</nav>
+		<a class="ctrl__button header__button" href="#">Войти</a>
+		<a class="header__user-link" href="#">
+			<img class="header__user" src="./images/user.svg" width="30" height="30" alt="user">
+		</a>
+	</div>
+	<div class="app__wrapper header__content header__content_popup header__content_popup_show">
+	</div>
+	<div class="header__overlay">
+	</div>
+	<div class="header__side-panel">
+		<button class="header__side-close-button"></button>
+		<div class="header__side-content">
+			<a class="header__side-logo-link" href="./index.html">
+				<img class="header__side-logo" src="./images/logo-horizont.svg" width="200" height="41" alt="logo">
+			</a>
+			<nav class="header__side-menu">
+				<ul class="header__side-menu-list">
+					<li class="header__side-menu-item">
+						<p class="header__menu-link header__menu-link_active">Инвесторам</p>
+					</li>
+					<li class="header__side-menu-item">
+						<a class="header__menu-link" href="./borrowers.html">Заёмщикам</a>
+					</li>
+					<li class="header__side-menu-item">
+						<a class="header__menu-link" href="./partners.html">Партнёрам</a>
+					</li>
+				</ul>
+			</nav>
+			<a class="ctrl__button header__side-button" href="#">Войти</a>
+		</div>
+	</div>
+</header>
+
+<main>
+	<div class="app__wrapper invest">
+		<div class="invest__video-background">
+			<video class="invest__video" autoplay loop muted>
+				<source src="./movies/anim-invest.mp4" type="video/mp4" />
+			</video>
+		</div>
+		<div class="invest__content">
+			<h1 class="invest__title">
+				Зарабатывайте до 35% годовых на инвестициях в надёжные проекты
+			</h1>
+			<div class="invest__labels-container">
+				<div class="invest__label">
+					<img class="invest__label-image" src="./images/eagle.svg" width="44" height="44" alt="label">
+					<p class="invest__label-text">
+						Под контролем ЦБ РФ
+					</p>
+				</div>
+			</div>
+			<a class="ctrl__button ctrl__button_red invest__button" href="#">Начать инвестировать</a>
+			<div class="invest__content-background">
+			</div>
+		</div>
+	</div>
+	<div class="app__wrapper stat">
+		<h1 class="stat__title">
+			Статистика платформы
+		</h1>
+		<p class="stat__subtitle">
+			Начиная с 2020 года
+		</p>
+		<div class="stat__props">
+			<div class="stat__prop">
+				<p class="stat__prop-value">
+					2493
+				</p>
+				<div class="stat__prop-line">
+				</div>
+				<p class="stat__prop-name">
+					Количество займов
+				</p>
+			</div>
+			<div class="stat__prop">
+				<p class="stat__prop-value">
+					<span>2401</span><span class="stat__prop-value_text"> млн ₽</span>
+				</p>
+				<div class="stat__prop-line">
+				</div>
+				<p class="stat__prop-name">
+					Сумма займов
+				</p>
+			</div>
+			<div class="stat__prop">
+				<p class="stat__prop-value">
+					4123
+				</p>
+				<div class="stat__prop-line">
+				</div>
+				<p class="stat__prop-name">
+					Инвесторов
+				</p>
+			</div>
+			<div class="stat__prop">
+				<p class="stat__prop-value">
+					476
+				</p>
+				<div class="stat__prop-line">
+				</div>
+				<p class="stat__prop-name">
+					Заёмщиков
+				</p>
+			</div>
+		</div>
+		<h2 class="stat__analitics-title">
+			Аналитика за 2022 год
+		</h2>
+		<div class="stat__analitics">
+			<div class="stat__analitics-item">
+				<p class="stat__analitics-name stat__analitics-name_given">
+					Выдано<br>займов
+				</p>
+				<p class="stat__analitics-value">
+					<span>&nbsp;668</span><span class="stat__analitics-text"> млн ₽</span>
+				</p>
+			</div>
+			<div class="stat__chart">
+				<div class="stat__chart-row">
+					<div class="stat__chart-item stat__chart-item_given">100%</div>
+				</div>
+				<div class="stat__chart-row">
+					<div class="stat__chart-item stat__chart-item_non-return">0%</div>
+					<div class="stat__chart-item stat__chart-item_delay">0%</div>
+					<div class="stat__chart-item stat__chart-item_return">0%</div>
+				</div>
+			</div>
+			<div class="stat__analitics-container">
+				<div class="stat__analitics-item">
+					<p class="stat__analitics-name stat__analitics-name_return">
+						Возвращено<br>вовремя
+					</p>
+					<p class="stat__analitics-value">
+						<span id="return">&nbsp;500<!--515,1--></span><span class="stat__analitics-text"> млн ₽</span>
+					</p>
+				</div>
+				<div class="stat__analitics-item">
+					<p class="stat__analitics-name stat__analitics-name_delay">
+						Возвращено<br>с просрочкой
+					</p>
+					<p class="stat__analitics-value">
+						<span id="delay">&nbsp;300<!--126,7--></span><span class="stat__analitics-text"> млн ₽</span>
+					</p>
+				</div>
+				<div class="stat__analitics-item">
+					<p class="stat__analitics-name stat__analitics-name_non-return">
+						Просрочено<br>займов на
+					</p>
+					<p class="stat__analitics-value">
+						<span id="non-return">&nbsp;200<!--56,2--></span><span class="stat__analitics-text"> млн ₽</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="app__wrapper stat__text">
+		<div class="stat__text-container">
+			<h2 class="stat__text-title">
+				We're here to put a dent in the universe. Otherwise, why else even be here?
+			</h2>
+			<p class="stat__text-content">
+				Visual communication takes place through pictures, graphs, and charts, as well as through signs, signals, and symbols. It may be used either independently or as an adjunct to other methods.
+			</p>
+		</div>
+	</div>
+</main>
+
+<footer class="footer">
+</footer>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/invest.js"></script>
+
+</body>
+
+</html>
+

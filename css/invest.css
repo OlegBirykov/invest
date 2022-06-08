@@ -1,0 +1,274 @@
+.invest {
+    display: flex;
+}
+
+.invest__video-background {
+    position: relative;
+    z-index: -20;
+
+    order: 2;
+
+    margin: 25px 0 0 50px;
+}
+
+.invest__video {
+    position: relative;
+
+    width: 574px;
+    height: 590px;
+
+/*    box-shadow: 0 6px 20px 0 rgba(240, 240, 240, 0.4);*/
+}
+
+.invest__content {
+    position: relative;
+
+    order: 1;
+
+    padding-top: 102px;
+    padding-bottom: 135px;
+}
+
+.invest__title {
+    width: 560px;
+
+    color: #212121;
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 1.55;
+}
+
+.invest__labels-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 28px 0 0 -20px;
+}
+
+.invest__label {
+    display: flex;
+    align-items: center;
+
+    height: 71px;
+    margin: 20px 0 0 20px;
+    padding: 0 60px 0 22px;
+    border: 1px solid #f8f8f8;
+    border-radius: 10px;
+
+    background-color: white;
+    box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.invest__label_borrower {
+    height: 50px;
+    padding: 0 22px;
+}
+
+.invest__label_borrower:not(:first-child) {
+    margin-left: 20px;
+}
+
+.invest__label_partner {
+    max-width: 420px;
+    height: 50px;
+    padding: 0 22px;
+}
+
+.invest__label_partner:not(:first-child) {
+    height: 50px;
+    padding: 0 22px;
+}
+
+.invest__label-text {
+    margin-left: 22px;
+
+    color: #212121;
+
+    font-size: 18px;
+}
+
+.invest__label-text_borrower {
+    margin-left: 0;
+
+    font-size: 14px;
+}
+
+.invest__label-text_partner {
+    margin-left: 15px;
+
+    font-size: 14px;
+}
+
+.invest__label-text_select {
+    min-width: 90px;
+    margin-left: 0;
+
+    font-weight: 500;
+    text-align: center;
+}
+
+.invest__button {
+    width: 258px;
+    margin-top: 44px;
+}
+
+.invest__content-background {
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+
+    width: 972px;
+    height: 972px;
+
+    background-image: url("../images/blur.png");
+    background-size: 100%;
+}
+
+@media (max-width: 1199px) {
+    .invest__video-background {
+        margin: 85px 0 0 40px;
+    }
+
+    .invest__video {
+        width: 393px;
+        height: 405px;
+    }
+
+    .invest__content {
+        padding-top: 81px;
+        padding-bottom: 41px;
+    }
+
+    .invest__title {
+        width: 510px;
+
+        font-size: 37px;
+    }
+
+    .invest__label {
+        width: 344px;
+        margin-top: 27px;
+        padding: 0 21px;
+    }
+
+    .invest__label-text {
+        margin-left: 17px;
+    }
+
+    .invest__button {
+        margin-top: 21px;
+    }
+
+    .invest__content-background {
+        top: 58%;
+        left: 70%;
+    }
+}
+
+@media (max-width: 959px) {
+    .invest {
+        display: block;
+    }
+
+    .invest__video-background {
+        margin: 20px auto 0 auto;
+    }
+
+    .invest__content {
+        padding-top: 38px;
+        padding-bottom: 35px;
+    }
+
+    .invest__title {
+        width: 100%;
+        font-size: 29px;
+    }
+
+    .invest__label {
+        width: 333px;
+        margin-top: 38px;
+    }
+
+    .invest__button {
+        margin-top: 24px;
+    }
+
+    .invest__content-background {
+        top: 50%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+
+        width: 753px;
+        height: 753px;
+    }
+}
+
+@media (max-width: 639px) {
+    .invest__video {
+        width: 278px;
+        height: 288px;
+    }
+
+    .invest__content {
+        padding-bottom: 33px;
+    }
+
+    .invest__title {
+        font-size: 23px;
+    }
+
+    .invest__label {
+        margin-top: 30px;
+    }
+
+    .invest__button {
+        margin-top: 23px;
+    }
+
+    .invest__content-background {
+        top: 75%;
+        left: 85%;
+    }
+}
+
+@media (max-width: 479px) {
+    .invest__video-background {
+        margin-top: 5px;
+    }
+
+    .invest__content {
+        padding-top: 22px;
+        padding-bottom: 30px;
+    }
+
+    .invest__title {
+        font-size: 15px;
+    }
+
+    .invest__label {
+        width: 100%;
+        height: 63px;
+        margin-top: 16px;
+        padding: 0 10px;
+    }
+
+    .invest__label-text {
+        font-size: 17px;
+    }
+
+    .invest__button {
+        width: 100%;
+        height: 43px;
+        margin-top: 15px;
+    }
+
+    .invest__content-background {
+        top: 50%;
+        left: 70%;
+
+        width: 558px;
+        height: 558px;
+    }
+}

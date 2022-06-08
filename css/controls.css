@@ -1,0 +1,21 @@
+.ctrl__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 46px;
+    border: 1px solid #ff0000;
+    border-radius: 10px;
+
+    color: #ff0000;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.ctrl__button_red {
+    color: white;
+
+    background-color: #ff0000;
+    box-shadow: 0 6px 20px 0 rgba(255, 0, 0, 0.4);
+}
