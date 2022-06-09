@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="./css/header.css">
 	<link rel="stylesheet" href="./css/footer.css">
 	<link rel="stylesheet" href="./css/invest.css">
-    <link rel="stylesheet" href="./css/doс-links.css">
+	<link rel="stylesheet" href="./css/politic.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
 		<nav class="header__menu">
 			<ul class="header__menu-list">
 				<li class="header__menu-item">
-					<p class="header__menu-link header__menu-link_active">Инвесторам</p>
+					<a class="header__menu-link" href="./index.html">Инвесторам</a>
 				</li>
 				<li class="header__menu-item">
 					<a class="header__menu-link" href="./borrowers.html">Заёмщикам</a>
@@ -57,7 +57,7 @@
 			<nav class="header__side-menu">
 				<ul class="header__side-menu-list">
 					<li class="header__side-menu-item">
-						<p class="header__menu-link header__menu-link_active">Инвесторам</p>
+						<a class="header__menu-link" href="./index.html">Инвесторам</a>
 					</li>
 					<li class="header__side-menu-item">
 						<a class="header__menu-link" href="./borrowers.html">Заёмщикам</a>
@@ -73,38 +73,17 @@
 </header>
 
 <main>
-	<div class="app__wrapper invest">
-		<div class="invest__video-background">
-			<video class="invest__video" autoplay loop muted>
-				<source src="./movies/anim-invest.mp4" type="video/mp4" />
-			</video>
-		</div>
-		<div class="invest__content">
-			<h1 class="invest__title">
-				Зарабатывайте до 35% годовых на инвестициях в надёжные проекты
-			</h1>
-			<div class="invest__labels-container">
-				<div class="invest__label">
-					<img class="invest__label-image" src="./images/eagle.svg" width="44" height="44" alt="label">
-					<p class="invest__label-text">
-						Под контролем ЦБ РФ
-					</p>
-				</div>
-			</div>
-			<a class="ctrl__button ctrl__button_red invest__button" href="#">Начать инвестировать</a>
-			<div class="invest__content-background">
-			</div>
+	<div class="app__wrapper politic">
+		<h1 class="politic__title">
+			Политика конфиденциальности и обработки персональных данных
+		</h1>
+		<div class="politic__content">
+			<p class="politic__text">
+				Настоящая Политика конфиденциальности и обработки персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации,
+				которую ООО «ИР» может получить о Пользователе во время использования сайта, программ и продуктов платформы «Инвестиции России».
+			</p>
 		</div>
 	</div>
-    <div class="app__wrapper doc-links">
-        <h1 class="doc-links__title">
-            Перечень документов для ЦБ РФ
-        </h1>
-        <div class="doc-links__container">
-            <a class="ctrl__button doc-links__button" href="./documents.html">Документы платформы</a>
-            <a class="ctrl__button doc-links__button" href="./info.html">Раскрытие информации</a>
-        </div>
-    </div>
 </main>
 
 <footer class="app__wrapper footer">

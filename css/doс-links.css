@@ -1,0 +1,24 @@
+.doc-links {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f5f7f8;
+}
+
+.doc-links__title {
+    color: #212121;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.doc-links__container {
+    display: flex;
+    margin-top: 30px;
+}
+
+.doc-links__button {
+    padding: 0 30px;
+}
+
+.doc-links__button:not(:first-child) {
+    margin-left: 20px;
+}

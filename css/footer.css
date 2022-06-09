@@ -1,6 +1,29 @@
 .footer {
+    display: flex;
+    align-items: center;
     height: 72px;
 
-    background-color: black;
+    background-color: #3b3b3b;
 }
+
+.footer__text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 100%;
+
+    color: white;
+    font-size: 12px;
+}
+
+.footer__politic {
+    text-decoration: underline;
+}
+
+.footer__copyright {
+    margin-left: 20px;
+}
+
+
 

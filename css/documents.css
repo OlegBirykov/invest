@@ -1,0 +1,11 @@
+.documents {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.documents__title {
+    color: #212121;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.55;
+}
