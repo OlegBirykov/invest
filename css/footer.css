@@ -2,6 +2,8 @@
     display: flex;
     align-items: center;
     min-height: 72px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     background-color: #3b3b3b;
 }
@@ -12,18 +14,17 @@
     justify-content: space-between;
 
     width: 100%;
+    margin-top: -5px;
 
     color: white;
     font-size: 12px;
 }
 
 .footer__politic {
+    margin-top: 5px;
     text-decoration: underline;
 }
 
 .footer__copyright {
-    margin-left: 20px;
+    margin-top: 5px;
 }
-
-
-

@@ -12,13 +12,57 @@
 
 .doc-links__container {
     display: flex;
-    margin-top: 30px;
+    flex-wrap: wrap;
+    margin: 10px 0 0 -20px;
 }
 
 .doc-links__button {
     padding: 0 30px;
 }
 
-.doc-links__button:not(:first-child) {
-    margin-left: 20px;
+.doc-links__button {
+    margin: 20px 0 0 20px;
+}
+
+@media (max-width: 1199px) {
+    .doc-links__title {
+        font-size: 37px;
+    }
+}
+
+
+@media (max-width: 959px) {
+    .doc-links__title {
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 639px) {
+    .doc-links {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .doc-links__title {
+        font-size: 23px;
+    }
+
+    .doc-links__button {
+        width: 350px;
+    }
+}
+
+@media (max-width: 479px) {
+    .doc-links {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .doc-links__title {
+        font-size: 15px;
+    }
+
+    .doc-links__button {
+        width: 100%;
+    }
 }

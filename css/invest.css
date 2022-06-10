@@ -49,9 +49,9 @@
     display: flex;
     align-items: center;
 
-    height: 71px;
+    min-height: 71px;
     margin: 20px 0 0 20px;
-    padding: 0 60px 0 22px;
+    padding: 5px 60px 5px 22px;
     border: 1px solid #f5f7f8;
     border-radius: 10px;
 
@@ -60,7 +60,7 @@
 }
 
 .invest__label_borrower {
-    height: 50px;
+    min-height: 50px;
     padding: 0 22px;
 }
 
@@ -70,13 +70,8 @@
 
 .invest__label_partner {
     max-width: 420px;
-    height: 50px;
-    padding: 0 22px;
-}
-
-.invest__label_partner:not(:first-child) {
-    height: 50px;
-    padding: 0 22px;
+    min-height: 50px;
+    padding: 5px 22px;
 }
 
 .invest__label-text {
@@ -150,7 +145,7 @@
     .invest__label {
         width: 344px;
         margin-top: 27px;
-        padding: 0 21px;
+        padding: 5px 21px;
     }
 
     .invest__label-text {
@@ -223,6 +218,10 @@
         margin-top: 30px;
     }
 
+    .invest__label-text {
+        font-size: 14px;
+    }
+
     .invest__button {
         margin-top: 23px;
     }
@@ -249,13 +248,13 @@
 
     .invest__label {
         width: 100%;
-        height: 63px;
+        min-height: 63px;
         margin-top: 16px;
-        padding: 0 10px;
+        padding: 5px 10px;
     }
 
     .invest__label-text {
-        font-size: 17px;
+        font-size: 14px;
     }
 
     .invest__button {
