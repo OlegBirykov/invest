@@ -75,6 +75,10 @@ body {
     background-color: white;
 }
 
+main {
+    min-height: calc(100vh - 150px);
+}
+
 a {
     display: block;
     text-decoration: none;

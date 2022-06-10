@@ -8,17 +8,18 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 1.55;
+    text-align: center;
 }
 
 .documents__group {
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .documents__subtitle {
     padding-left: 20px;
 
     color: #212121;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 1.55;
 }
@@ -30,15 +31,34 @@
 }
 
 .documents__item {
-    padding: 10px 20px 15px 20px;
-    border: 1px solid #f8f8f8;
+    border: 1px solid #f5f7f8;
     border-radius: 10px;
 
     box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.1);
+
+    overflow: hidden;
 }
 
 .documents__item:not(:first-child) {
     margin-top: 20px;
+}
+
+.documents__item-link {
+    display: block;
+    padding: 10px 100px 15px 20px;
+
+    transition: background-color 0.25s;
+
+    background-image: url("../images/pdf.svg");
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: right 20px center;
+}
+
+.documents__item-link:hover {
+    background-color: #f0f0f0;
+
+    transition: background-color 0.25s;
 }
 
 .documents__item-date {
@@ -50,6 +70,4 @@
 
     font-size: 18px;
     font-weight: 700;
-
-    text-decoration: underline;
 }
