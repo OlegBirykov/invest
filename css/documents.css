@@ -8,7 +8,6 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 1.55;
-    text-align: center;
 }
 
 .documents__group {
@@ -19,8 +18,7 @@
     padding-left: 20px;
 
     color: #212121;
-    font-size: 28px;
-    font-weight: 700;
+    font-size: 24px;
     line-height: 1.55;
 }
 
@@ -56,6 +54,7 @@
 }
 
 .documents__item-link:hover {
+    border-color: #f0f0f0;
     background-color: #f0f0f0;
 
     transition: background-color 0.25s;
