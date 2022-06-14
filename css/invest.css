@@ -1,5 +1,7 @@
 .invest {
     display: flex;
+
+    overflow: hidden;
 }
 
 .invest__video-background {
