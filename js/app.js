@@ -67,6 +67,12 @@ $(document).ready(function() {
         openLoginForm();
     });
 
+    $('.header__side-button').click(function(e) {
+        e.preventDefault();
+        closeMenu();
+        openLoginForm();
+    });
+
     $('.header__user').click(function(e) {
         e.preventDefault();
         openLoginForm();
@@ -90,6 +96,52 @@ sideMenuLink.click(function(e) {
 
 loginOverlay.click(() => closeLoginForm());
 
+//const data = {};
+//const message = $('.message-screen');
 
+$('#login .ctrl__input').change(function(e) {
+    e.target.value = e.target.value.trim();
+});
 
+$('#login form').validate({
+    rules: {
+        login: 'required',
+        password: 'required',
+    },
 
+    messages: {
+        login: 'Введите логин',
+        password: 'Введите пароль',
+    },
+
+//    submitHandler: function(form) {
+//        data.lastName = form['last-name'].value;
+//        data.firstName = form['first-name'].value;
+//        data.patronymic = form.patronymic.value;
+//        data.phone = form.phone.value;
+//        data.email = form.email.value;
+//        data.project = $(form).find('[name=project]').text().trim();
+
+//        $.ajax({
+//            url: "/mortgage/app",
+
+//            type: "POST",
+
+//            data: data,
+
+//            success: function () {
+//                message.addClass('message-screen_active');
+//                setTimeout(() => $(location).attr('href', '/mortgage'), 3000);
+//            },
+
+//            error: function (msg) {
+//                message.find('.message-screen__title').text(`Ошибка ${msg.status} - ${msg.statusText}`);
+//                message.find('.message-screen__text').text('Проверьте интернет-соединение и попробуйте ещё раз');
+//                message.addClass('message-screen_active');
+//                setTimeout(() => message.removeClass('message-screen_active'), 5000);
+//            }
+//        });
+//    },
+
+    errorClass: 'ctrl__input_error'
+});

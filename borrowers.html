@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="robots" content="noindex">
     <title>Инвестиции России - заёмщикам</title>
     <link rel="stylesheet" href="./app.css">
     <link rel="stylesheet" href="./css/controls.css">
@@ -134,10 +135,28 @@
     </form>
 </div>
 
+<div class="popup" id="borrower">
+    <div class="popup__overlay">
+    </div>
+    <form class="popup__window">
+        <div class="ctrl__input-container">
+            <label class="ctrl__label">Логин</label>
+            <input class="ctrl__input" type="text" name="login" required>
+        </div>
+        <div class="ctrl__input-container form-booking__input-container">
+            <label class="ctrl__label">Пароль</label>
+            <input class="ctrl__input" type="password" name="password" required>
+        </div>
+        <button class="ctrl__button ctrl__button_form" type="submit">
+            Войти
+        </button>
+    </form>
+</div>
+
 <script src="./js/jquery.min.js"></script>
 <script src="./js/jquery.validate.min.js"></script>
 <script src="./js/app.js"></script>
-<script src="./js/invest.js"></script>
+<script src="./js/borrowers.js"></script>
 
 </body>
 
