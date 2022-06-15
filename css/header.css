@@ -1,4 +1,6 @@
 .header__content {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,6 +86,23 @@
     display: none;
 }
 
+.header__cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: none;
+
+    background-color: white;
+    opacity: 0;
+}
+
+.header__cover_show {
+    display: none;
+}
+
 .header__overlay {
     position: fixed;
     top: 0;
@@ -111,52 +130,15 @@
 
     display: none;
 
-    min-width: 280px;
+    min-width: 260px;
 
     background-color: white;
 
-    overflow-y: auto;
+    overflow: visible;
 }
 
 .header__side-panel_show {
     display: none;
-}
-
-.header__side-close-button {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-
-    width: 40px;
-    height: 40px;
-
-    cursor: pointer;
-}
-
-.header__side-close-button::before {
-    content: "";
-    position: absolute;
-    top: calc(50% - 1px);
-    left: calc(50% - 12px);
-    transform: rotate(45deg);
-
-    width: 24px;
-    height: 2px;
-
-    background-color: #212121;
-}
-
-.header__side-close-button::after {
-    content: "";
-    position: absolute;
-    top: calc(50% - 1px);
-    left: calc(50% - 12px);
-    transform: rotate(-45deg);
-
-    width: 24px;
-    height: 2px;
-
-    background-color: #212121;
 }
 
 .header__side-content {
@@ -165,7 +147,7 @@
 
     height: 100%;
     min-height: 350px;
-    padding: 45px 25px 25px 25px;
+    padding: 13px 25px 25px 25px;
 }
 
 .header__side-menu {
@@ -182,6 +164,15 @@
 
 .header__side-button {
     width: 100px;
+}
+
+.header__side-close {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    transform: translateX(-100%);
+
+    opacity: 0;
 }
 
 .header__app-noscrolling {
@@ -211,6 +202,10 @@
 
     .header__menu {
         display: none;
+    }
+
+    .header__cover_show {
+        display: block;
     }
 
     .header__overlay_show {

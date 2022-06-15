@@ -2,7 +2,7 @@ const staticHeader = $('.header__content_static');
 const popupHeader = $('.header__content_popup');
 const overlay = $('.header__overlay');
 const sidePanel = $('.header__side-panel');
-const closeButton = $('.header__side-close-button');
+const closeButton = $('.header__side-close');
 const sideMenuLink = $('.header__side-menu .header__menu-link');
 
 const loginPage = $('.popup#login');
@@ -22,8 +22,12 @@ function closeMenu(href) {
         }
     };
 
-    overlay.animate({ opacity: "0" }, 300, 'swing', overlayOff);
-    sidePanel.animate({ right: `-${sidePanel.width()}px` }, 500, 'swing', menuOff);
+    staticHeader.find('.header__cover').animate({ opacity: "0" }, 500, '', () => staticHeader.find('.header__cover').removeClass('header__cover_show'));
+    popupHeader.find('.header__cover').animate({ opacity: "0" }, 500, '', () => popupHeader.find('.header__cover').removeClass('header__cover_show'));
+
+    overlay.animate({ opacity: "0" }, 300, '', overlayOff);
+    closeButton.animate({ opacity: "0" }, 400);
+    sidePanel.animate({ right: `-${sidePanel.width()}px` }, 500, '', menuOff);
 }
 
 function openLoginForm() {
@@ -60,6 +64,10 @@ $(document).ready(function() {
         sidePanel.css({ right: `-${sidePanel.width()}px` });
         sidePanel.addClass('header__side-panel_show');
         sidePanel.animate({ right: "0" }, 500);
+        closeButton.animate({ opacity: "1" }, 500);
+
+        staticHeader.find('.header__cover').addClass('header__cover_show').animate({ opacity: "1" }, 500);
+        popupHeader.find('.header__cover').addClass('header__cover_show').animate({ opacity: "1" }, 500);
     });
 
     $('.header__button').click(function(e) {
@@ -96,9 +104,6 @@ sideMenuLink.click(function(e) {
 
 loginOverlay.click(() => closeLoginForm());
 
-//const data = {};
-//const message = $('.message-screen');
-
 $('#login .ctrl__input').change(function(e) {
     e.target.value = e.target.value.trim();
 });
@@ -113,35 +118,6 @@ $('#login form').validate({
         login: 'Введите логин',
         password: 'Введите пароль',
     },
-
-//    submitHandler: function(form) {
-//        data.lastName = form['last-name'].value;
-//        data.firstName = form['first-name'].value;
-//        data.patronymic = form.patronymic.value;
-//        data.phone = form.phone.value;
-//        data.email = form.email.value;
-//        data.project = $(form).find('[name=project]').text().trim();
-
-//        $.ajax({
-//            url: "/mortgage/app",
-
-//            type: "POST",
-
-//            data: data,
-
-//            success: function () {
-//                message.addClass('message-screen_active');
-//                setTimeout(() => $(location).attr('href', '/mortgage'), 3000);
-//            },
-
-//            error: function (msg) {
-//                message.find('.message-screen__title').text(`Ошибка ${msg.status} - ${msg.statusText}`);
-//                message.find('.message-screen__text').text('Проверьте интернет-соединение и попробуйте ещё раз');
-//                message.addClass('message-screen_active');
-//                setTimeout(() => message.removeClass('message-screen_active'), 5000);
-//            }
-//        });
-//    },
 
     errorClass: 'ctrl__input_error'
 });
